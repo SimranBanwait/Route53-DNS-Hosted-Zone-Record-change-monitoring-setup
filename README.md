@@ -152,7 +152,7 @@ def lambda_handler(event, context):
     record_name   = get_record_name(change_batch)
     clean_zone_id = zone_id.split("/")[-1] if zone_id != "N/A" else "N/A"
 
-    subject = f"POC-USSTG-Route53-DNS Record {action_word} for domain - {zone_name}"
+    subject = f"POC-USSTG-Route53-ALERT Hosted Zone Record change detected | Domain: {zone_name}"
 
     body_text = f"""Hi Team,
 
