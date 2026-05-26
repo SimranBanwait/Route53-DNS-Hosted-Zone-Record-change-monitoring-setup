@@ -74,11 +74,11 @@ The Lambda function receives the full EventBridge event payload and performs the
 
 ![Lambda Function](Images/3.png)
 
-### Code
+### Lambda Function Code
 
 
 <details>
-  <summary>###Code</summary>
+  <summary>Code</summary>
 
   ```python
 import boto3
@@ -194,7 +194,10 @@ The Lambda execution role requires the following permissions. The SES permission
 
 ### Code
 
-```json
+<details>
+  <summary>Code</summary>
+
+  ```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -227,6 +230,9 @@ The Lambda execution role requires the following permissions. The SES permission
   ]
 }
 ```
+
+</details>
+
 
 > Replace `YOUR_ACCOUNT_ID` with your actual AWS account ID.
 
