@@ -17,7 +17,7 @@ Automated email alerting system that detects any DNS record changes across all R
 
 ## Architecture
 
-![Architecture Diagram](Images/architecture-placeholder.png)
+![Architecture Diagram](Images/0.png)
 
 ---
 
@@ -54,11 +54,11 @@ The rule listens for CloudTrail events originating from Route53 where the API ca
 
 **Rule Overview**
 
-![EventBridge Rule](Images/eventbridge-rule-placeholder.png)
+![EventBridge Rule](Images/1.png)
 
 **Edit Rule View**
 
-![EventBridge Edit Rule](Images/eventbridge-edit-rule-placeholder.png)
+![EventBridge Edit Rule](Images/2.png)
 
 ---
 
@@ -72,7 +72,7 @@ The Lambda function receives the full EventBridge event payload and performs the
 
 ### Screenshot
 
-![Lambda Function](Images/lambda-function-placeholder.png)
+![Lambda Function](Images/3.png)
 
 ### Code
 
