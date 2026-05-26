@@ -33,7 +33,23 @@ Automated email alerting system that detects any DNS record changes across all R
 
 ---
 
+## Workflow
+
+## New Record creation in Hosted Zone
+
+![EventBridge Rule](Images/1.png)
+
+![EventBridge Rule](Images/2.png)
+
+![EventBridge Rule](Images/3.png)
+
+
+## Cloudtrail logs gets generated
+
+![EventBridge Rule](Images/4.png)
+
 ## EventBridge Rule
+
 
 The rule listens for CloudTrail events originating from Route53 where the API call is `ChangeResourceRecordSets`. It matches across all hosted zones in the account.
 
@@ -54,11 +70,11 @@ The rule listens for CloudTrail events originating from Route53 where the API ca
 
 **Rule Overview**
 
-![EventBridge Rule](Images/1.png)
+![EventBridge Rule](Images/5.png)
 
 **Edit Rule View**
 
-![EventBridge Edit Rule](Images/2.png)
+![EventBridge Edit Rule](Images/6.png)
 
 ---
 
@@ -72,7 +88,7 @@ The Lambda function receives the full EventBridge event payload and performs the
 
 ### Screenshot
 
-![Lambda Function](Images/3.png)
+![Lambda Function](Images/7.png)
 
 ### Lambda Function Code
 
@@ -242,9 +258,12 @@ The Lambda execution role requires the following permissions. The SES permission
 
 The email subject reflects the type of change (creation, deletion, or modification) and the affected domain. The body identifies the record, hosted zone, and the IAM user who made the change.
 
-### Screenshot
 
-![Email Alert](Images/email-alert-placeholder.png)
+![Email Alert](Images/8.png)
+
+### Same alert for deletion of record
+
+![Email Alert](Images/9.png)
 
 ---
 
