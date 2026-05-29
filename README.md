@@ -252,6 +252,12 @@ The Lambda execution role requires the following permissions. The SES permission
 
 > Replace `YOUR_ACCOUNT_ID` with your actual AWS account ID.
 
+## SNS Topic
+
+Lambda function uses an SNS Topic to send the email alert.
+
+![Lambda Function](Images/10.png)
+
 ---
 
 ## Email Alert
